@@ -3,6 +3,9 @@ import { StyleSheet, View, Platform } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { Camera, CameraType } from 'expo-camera';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import * as tf from '@tensorflow/tfjs';
+import * as poseDetection from '@tensorflow-models/pose-detection';
+
 
 export default function App() {
   const [hasPermission, setHasPermission] = useState<boolean | null>(null);
